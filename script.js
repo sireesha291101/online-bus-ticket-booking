@@ -1,5 +1,7 @@
 function bookTicket(){
 
+    console.log("book ticket button clicked")
+    
     let name = document.getElementById("name").value;
     let age = Number(document.getElementById("age").value);
     let destinationPrice = Number(document.getElementById("destination").value);
