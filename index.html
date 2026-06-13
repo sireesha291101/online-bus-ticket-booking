@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bus Ticket Booking System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Online Bus Ticket Booking</h1>
+
+        <form id="bookingForm">
+
+            <label>Passenger Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label>Age</label>
+            <input type="number" id="age" placeholder="Enter your age">
+
+            <label>Destination</label>
+            <select id="destination">
+                <option value="">Select Destination</option>
+                <option value="500">Hyderabad - ₹500</option>
+                <option value="800">Bangalore - ₹800</option>
+                <option value="700">Chennai - ₹700</option>
+            </select>
+
+            <label>Number of Tickets</label>
+            <input type="number" id="tickets" placeholder="Enter tickets">
+
+            <button type="button" onclick="bookTicket()">
+                Book Ticket
+            </button>
+
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
